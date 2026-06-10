@@ -6,7 +6,6 @@ import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { useState, useEffect } from "react"
-import { PORTFOLIO_DATA } from "@/lib/data"
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -22,9 +21,10 @@ export function Navbar() {
 
   const navLinks = [
     { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
+    { name: "Tools", href: "#tools" },
+    { name: "Community", href: "#community" },
     { name: "Experience", href: "#experience" },
+    { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
   ]
 
