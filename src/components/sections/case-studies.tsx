@@ -114,7 +114,7 @@ export function CaseStudies() {
                         <img 
                             src={study.image} 
                             alt={study.title}
-                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            className="w-full h-full object-contain p-4 transition-transform duration-700 group-hover:scale-105"
                             onError={(e) => {
                             (e.target as HTMLImageElement).src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 800 600" preserveAspectRatio="none"><rect width="100%" height="100%" fill="%23eee"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="24" fill="%23aaa">Dashboard / Visualization Mockup</text></svg>';
                             }}

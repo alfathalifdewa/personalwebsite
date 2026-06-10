@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
@@ -35,8 +36,18 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
+        {/* <Link href="/" className="hover:scale-105 transition-transform">
+          <Image 
+            src="/images/logo.png" 
+            alt="Logo" 
+            width={40} 
+            height={40} 
+            className="object-contain" 
+            priority
+          />
+        </Link> */}
         <Link href="/" className="font-bold text-xl tracking-tighter hover:text-primary transition-colors">
-          A.D
+          AD
         </Link>
 
         {/* Desktop Nav */}
